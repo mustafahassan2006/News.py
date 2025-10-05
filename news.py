@@ -2,7 +2,7 @@ import requests
 def main():
     try:
         try:
-            API=requests.get("https://newsapi.org/v2/everything?q=tesla&from=2025-08-03&sortBy=publishedAt&apiKey=74e5e5aa52954501a889575e842ceeab")
+            API=requests.get("your api key")
         except requests.exceptions.ConnectionError:
             print("Please check your internet conection ")
         ApiJson=API.json()
